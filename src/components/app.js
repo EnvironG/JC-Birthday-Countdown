@@ -49,7 +49,7 @@ export default class App extends Component {
 
     var timeBetween = today.getTime() - bday.getTime();
     var daysOld = Math.floor(timeBetween / (1000 * 60 * 60 *24));
-    var age = Number((daysOld/365).toFixed(0));
+    var age = Number((daysOld/365)).toFixed(0);
     this.setState({ 
       age, 
       active: true 
@@ -131,7 +131,7 @@ export default class App extends Component {
         return [
           ChangeDate('Change Date', () => this.setState({ active:false, bday: false })),
           LargeText(this.getBirthDate(this.state.startDate.toDate())),
-          <div className='sign' key={6}><span className="sign__text"><i class="fas fa-birthday-cake"></i>Happy Birthday!<i class="fas fa-birthday-cake"></i></span></div>
+          <div className='sign' key={6}><span className="sign__text"><i className="fas fa-birthday-cake"></i>Happy Birthday!<i className="fas fa-birthday-cake"></i></span></div>
         ]
       };
       return [
