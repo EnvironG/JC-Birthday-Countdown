@@ -1,0 +1,32 @@
+.sign {
+    grid-row: 2/3;
+    grid-column: 2/8;
+    align-self: end;
+    
+
+    background-color: $color-gray-one;
+    text-align:center;
+    height: 85%;
+    width: 100%;
+    
+    clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    
+
+    &__text {
+        font-size: 72px;
+        color: $color-yellow-one;
+        font-family: $font-roboto;
+        margin-bottom: 0px;
+        align-self: center;
+    }
+
+    i {
+        color: white;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
